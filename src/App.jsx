@@ -17,11 +17,13 @@ function App() {
 
 
   return (
-    <>
-      <Header></Header>  {/* Child component has been imported here */}
-      <div className="md:flex">
-        <Blogs handelAddToBookmark={handelAddToBookmark}></Blogs>
-        <Bookmarks bookmarks={bookmarks}></Bookmarks>
+    < >
+      <div className='m-auto max-w-screen-lg p-10'>
+        <Header></Header>  {/* Child component has been imported here */}
+        <div className="md:flex gap-3 border border-yellow-500">
+          <Blogs handelAddToBookmark={handelAddToBookmark}></Blogs>
+          <Bookmarks bookmarks={bookmarks}></Bookmarks>
+        </div>
       </div>
       
     </>

@@ -7,8 +7,8 @@ const Blog = ({ blog, handelAddToBookmark }) => {
         authorName, authorImage } = blog;
     // console.log(title);
     return (
-        <div className="border border-red-500 w-2/3">
-            <img className="w-[220px]" src={coverImage} alt="" />
+        <div className="border border-red-500 w-full">
+            <img className="w-[420px]" src={coverImage} alt="" />
             <div className="flex justify-between">
                 <div>
                     <img className="w-6 h-6" src={authorImage} alt="Image Here" />

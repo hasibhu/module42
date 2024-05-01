@@ -5,11 +5,6 @@ import Blog from "../Blog/Blog";
 const Blogs = ({handelAddToBookmark}) => {
     const [blogs, setBlogs] = useState([]);
 
-   
-
-
-
-
     useEffect( () => {
         fetch('blogs.json')
             .then(res => res.json())
