@@ -51,6 +51,8 @@ const Bookmarks = ({ bookmarks }) => {
                     <button onClick={() => handleTransferBookmark(index)}>Transfer</button>
                 </div>
             ))}
+
+      
             <h2 className="text-3xl mt-28 border-t text-center border-lime-400 rounded-2xl">Transferred: {transferredBookmarks.length}</h2>
             {transferredBookmarks.map((bookmark, index) => (
                 <Bookmark key={bookmark.id} bookmark={bookmark} />

@@ -13,9 +13,10 @@ const Blogs = ({handelAddToBookmark}) => {
     }, [])
 
     return (
-        <div className="w-2/3 border border-red-400">
+        <div className="w-2/3 border border-red-400 space-y-3 p-2 ">
             <h1 className="text-4xl">Blogs: {blogs.length}</h1>
             
+            {/* Send data to blog component  */}
             {
                 blogs.map(blog => <Blog
                     key = {blog.id}
