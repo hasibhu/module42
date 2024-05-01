@@ -1,31 +1,9 @@
-// import Bookmark from "../Bookmark/Bookmark";
-
-// import Bookmark from "../Bookmark/Bookmark";
 
 
-// const Bookmarks = ({ bookmarks }) => {
-//     return (
-//         <div className="w-1/3">
-//             <h2 className="text-3xl">Bookmarks: {bookmarks.length}</h2>
-
-//             {
-//                 // bookmarks.map(bookmark => <Bookmark
-//                 //     key={bookmark.id}
-//                 //     bookmark={bookmark}></Bookmark>)
-
-//                 bookmarks.map((bookmark, index) => (
-//                     <Bookmark key={bookmark.id} bookmark={bookmark} serial={index + 1} />
-//                 ))
-//             }
-//         </div>
-
-//     );
-// };import { useState, useEffect } from 'react';
-
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import Bookmark from '../Bookmark/Bookmark';
 
-const Bookmarks = ({ bookmarks }) => {
+const Bookmarks = ({ bookmarks, readingTime }) => {
     const [transferredBookmarks, setTransferredBookmarks] = useState([]);
     const [currentBookmarks, setCurrentBookmarks] = useState(bookmarks);
 
@@ -44,13 +22,18 @@ const Bookmarks = ({ bookmarks }) => {
 
     return (
         <div className="w-1/3 mt-10">
+            <h1 className='text-center text-2xl mb-10'>Total Reading Time: <br /> {readingTime} </h1>
             <h2 className="text-3xl border-t text-center border-lime-400 rounded-2xl">Bookmarks: {currentBookmarks.length}</h2>
-            {currentBookmarks.map((bookmark, index) => (
-                <div key={bookmark.id}>
-                    <span>{index + 1}. {bookmark.title}</span>
-                    <button onClick={() => handleTransferBookmark(index)}>Transfer</button>
-                </div>
-            ))}
+
+
+            <div >
+                {currentBookmarks.map((bookmark, index) => <Bookmark
+                    key={index}
+                    bookmark={bookmark}
+                    serial={index} 
+                   
+                ></Bookmark>)}
+           </div>
 
       
             <h2 className="text-3xl mt-28 border-t text-center border-lime-400 rounded-2xl">Transferred: {transferredBookmarks.length}</h2>
