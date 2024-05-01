@@ -4,15 +4,28 @@ import './App.css'
 import Blogs from './components/Blogs/Blogs'
 import Bookmarks from './components/Bookmarks/Bookmarks'
 import Header from './components/Header/Header'
-
+import Swal from 'sweetalert2';
 function App() {
   // state for bookmark
   const [bookmarks, setBookmarks] = useState([]);
   const handelAddToBookmark = blog => {
     console.log(blog);
-    const newBookmarks = [...bookmarks, { ...blog, serial: bookmarks.length + 1 }];
-    setBookmarks(newBookmarks);
-  }
+    // Check if the blog is already bookmarked
+    const isAlreadyBookmarked = bookmarks.some(item => item.id === blog.id);
+
+    if (isAlreadyBookmarked) {
+      // If already bookmarked, show SweetAlert
+      Swal.fire({
+        icon: 'warning',
+        title: 'Oops...',
+        text: 'This blog is already bookmarked!',
+      });
+    } else {
+      // If not already bookmarked, add it to bookmarks
+      const newBookmarks = [...bookmarks, { ...blog, serial: bookmarks.length + 1 }];
+      setBookmarks(newBookmarks);
+    }
+  };
 
   //state for reading time 
   const [readingTime, setReadingTime] = useState(0);
