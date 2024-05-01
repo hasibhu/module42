@@ -1,0 +1,76 @@
+[
+    {
+        "id": 1,
+        "coverImage": "https://i.ibb.co/821Qn6s/blog-Image.jpg",
+        "authorName": "Emily Smith",
+        "title": "Top 100 Blogs you should know",
+        "authorImage": "https://i.ibb.co/LrsdP5F/daniel-lincoln-NR705be-N-CU-unsplash.jpg",
+        "postDate": "March 10, 2024",
+        "readingTime": 8,
+        "hashTags": [
+            "#fiction",
+            "#adventure",
+            "#shortstory"
+        ]
+    },
+
+    {
+        "id": 2,
+        "coverImage": "https://i.ibb.co/821Qn6s/blog-Image.jpg",
+        "authorName": "John Doe",
+        "title": "Top 500 React you should visit",
+        "authorImage": "https://i.ibb.co/LrsdP5F/daniel-lincoln-NR705be-N-CU-unsplash.jpg",
+        "postDate": "March 12, 2024",
+        "readingTime": 20,
+        "hashTags": [
+            "#sciencefiction",
+            "#dystopian",
+            "#novel"
+        ]
+    },
+
+    {
+        "id": 3,
+        "coverImage": "https://i.ibb.co/821Qn6s/blog-Image.jpg",
+        "authorName": "Sarah Johnson",
+        "title": "Top 200 Blogs you should know and pracice",
+        "authorImage": "https://i.ibb.co/LrsdP5F/daniel-lincoln-NR705be-N-CU-unsplash.jpg",
+        "postDate": "March 8, 2024",
+        "readingTime": 14,
+        "hashTags": [
+            "#poetry",
+            "#inspiration",
+            "#reflection"
+        ]
+    },
+
+    {
+        "id": 4,
+        "coverImage": "https://i.ibb.co/821Qn6s/blog-Image.jpg",
+        "authorName": "Michael Brown",
+        "title": "Top 20 Blogs you should know for HTML",
+        "authorImage": "https://i.ibb.co/LrsdP5F/daniel-lincoln-NR705be-N-CU-unsplash.jpg",
+        "postDate": "March 14, 2024",
+        "readingTime": 12,
+        "hashTags": [
+            "#mystery",
+            "#suspense",
+            "#thriller"
+        ]
+    },
+
+    {
+        "id": 5,
+        "coverImage": "https://i.ibb.co/821Qn6s/blog-Image.jpg",
+        "authorName": "Samantha Lee",
+        "title": "Top 10 Blogs you should know and visit",
+        "authorImage": "https://i.ibb.co/LrsdP5F/daniel-lincoln-NR705be-N-CU-unsplash.jpg",
+        "postDate": "March 6, 2024",
+        "readingTime": 67,
+        "hashTags": [
+            "#romance",
+            "#love",
+            "#relationships"
+        ]
+    }
+]
